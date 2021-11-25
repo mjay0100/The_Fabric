@@ -1,0 +1,134 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.thumbnail img {
+  width: 100%;
+}
+
+.thumbnail {
+  padding: 0;
+}
+
+.thumbnail .caption-full {
+  padding: 9px;
+}
+
+.delete-form {
+  display: inline;
+}
+
+/* Google Maps */
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="number"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+}
+
+.alert {
+  margin-top: 1em;
+}
+
+#fabric {
+  position: relative;
+  width: 100%;
+  height: 55vw;
+  object-fit: cover;
+  max-height: fit-content;
+}
+
+#show {
+  width: 100%;
+  height: 60vw;
+  object-fit: cover;
+}
+
+@media (min-width: 576px) {
+  #fabric {
+    height: 50vw;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    max-height: fit-content;
+  }
+}
+
+@media (min-width: 768px) {
+  #fabric {
+    height: 25vw;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    max-height: fit-content;
+  }
+}
+
+@media (min-width: 992px) {
+  #fabric {
+    height: 20vw;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    max-height: fit-content;
+  }
+}
+
+@media (min-width: 1400px) {
+  #fabric {
+    height: 17vw;
+    position: relative;
+    width: 100%;
+
+    object-fit: cover;
+    max-height: fit-content;
+  }
+}
+
+form {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
