@@ -16,7 +16,7 @@ const fabricRoutes = require("./routes/fabric")
 const indexRoutes = require("./routes/index")
 
 
-mongoose.connect("process.env.MONGODB_URI",
+mongoose.connect(process.env.MONGODB_URI,
     {useNewUrlParser: true}).then(()=> {
     console.log("DATABASE CONNECTED")}).catch(err => {console.log("ERROR", err.message)})
 
