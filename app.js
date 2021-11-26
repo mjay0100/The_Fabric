@@ -16,9 +16,8 @@ const fabricRoutes = require("./routes/fabric")
 const indexRoutes = require("./routes/index")
 
 
-mongoose.connect("mongodb+srv://MJ:mustaphajay@cluster0.4kzrl.mongodb.net/The_Fabric?retryWrites=true&w=majority",
-    {useNewUrlParser: true,
-        useUnifiedTopology: true}).then(()=> {
+mongoose.connect("process.env.MONGODB_URI",
+    {useNewUrlParser: true}).then(()=> {
     console.log("DATABASE CONNECTED")}).catch(err => {console.log("ERROR", err.message)})
 
 
