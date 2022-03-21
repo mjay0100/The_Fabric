@@ -1,0 +1,32 @@
+<%- include("../partials/header") %>
+
+<div class="p-3 p-md-5 mb-4 text-white rounded bg-secondary mt-3">
+    <div class="col-md-6 px-0">
+        <h1 class="display-4 fst-italic text-capitalize">Welocme to the fabric</h1>
+        <p class="lead my-3">The online application for users to view and purchase fabrics, jallabs, caps & more at affordable prices.</p>
+        <a class="btn btn-primary btn-lg" href="/fabrics/new">Add new fabrics</a>
+    </div>
+</div>
+<div class="row text-center">
+    <% fabrics.forEach(function(fabric){ %>
+        <div id="section" class="col-lg-4 col-md-6  mb-4">
+            <div class="card h-100">
+                <img src=" <%= fabric.image %> " id="fabric" class="card-img-top" alt="<%= fabric.name %>">
+                <div class="card-body">
+                    <h5 class="card-title text-capitalize"><%= fabric.name %></h5>
+                    <p class="card-text"> <%= fabric.description.substring(0,30) %> ... </p>
+                    <a href="/fabrics/ <%= fabric._id %> " class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+            
+        </div>
+    <% }) %>
+</div>
+       
+    
+<%- include("../partials/footer") %>
+    
+
+
+
+  
